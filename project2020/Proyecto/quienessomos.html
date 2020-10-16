@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<!--       _
+       .__(.)< (MEOW)
+        \___)   
+ ~~~~~~~~~~~~~~~~~~-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="mikrokosmos" content="width=device-width, initial-scale=1.0">
+    <title>MiKroKoSmoS</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/20/3d/b1/203db13ad93f8f4aeb9979c4763346bd.png"> 
+    <script src="js/jquery.js"></script>
+    <script src="js/mainjquery.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@600&family=Old+Standard+TT:ital,wght@0,700;1,400&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/maincss.css" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <style>
+    body { background-color: #c0d2e4; }
+  </style>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kit.fontawesome.com/77e87c97a5.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+<!-- menú -->
+        <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #0a0318;">    
+            <a class="navbar-brand" href="#">
+              <img src="https://i.pinimg.com/originals/20/3d/b1/203db13ad93f8f4aeb9979c4763346bd.png" 
+              width="35" height="35" alt="" loading="lazy">
+            </a>
+                <a class="navbar-brand" href="#">MiKroKoSmoS</a>          
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.pinimg.com/originals/20/3d/b1/203db13ad93f8f4aeb9979c4763346bd.png"
+                    width="35" height="35" alt="" loading="lazy">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="#"><i class="fas fa-question-circle">  ¿Quienes somos? </i></a>
+                      <a class="nav-link active" href="#"> <i class="fas fa-atlas">  Noticias</i><span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#"><i class="fas fa-star">  Favoritos </i></a>
+                      <a class="nav-link" href="#"><i class="fas fa-door-open">  Cerrar sesión </i></a>
+                      <a class="nav-link" href="#"><i class="fas fa-user">  Perfil </i></a>
+                    </div>
+                     <p>|                                  |</p>
+                  <img src="https://mui.today/__export/1575290084864/sites/mui/img/2019/12/02/jason-momoa-largo_1.jpg_537769036.jpg" width="35" height="35">
+                  <p>|                                  |</p>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item active">
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="far fa-bell"></i></a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <a class="dropdown-item" href="#">Coming</a>
+                              <a class="dropdown-item" href="#">Soon</a>
+                              <a class="dropdown-item" href="#">Notifications</a>
+                            </div>
+                        </li>
+                    </ul>       
+                  </div>                 
+                  </div>                 
+                        <a class="navbar-brand" href="#">
+                        <img src="https://i.pinimg.com/originals/20/3d/b1/203db13ad93f8f4aeb9979c4763346bd.png"
+                        width="35" height="35"  alt="" loading="lazy">
+                      </a>
+                <form class="form-inline my-6 my-lg-6">
+                    <input class="form-control mr-xl-0" type="search" placeholder="búsqueda" aria-label="búsqueda">
+                    <p>|                          |</p>
+                    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+                  </form>
+                <div class="fixed-top">
+         </nav>
+
+<!-- Fin menú -->
+
+        <!-- noticias librería -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/fc/10/a7/fc10a749ab41c9137c5bea42f35a228b.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://i.pinimg.com/originals/af/54/2b/af542bb994c7afb883a4af57c51ea5e8.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>Competencia de escritura</h4>
+                  <h5><bold>Participa en nuestro evento anual de escritura.</bold></h5>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only"></span>
+            </a>
+          </div>
+        <!-- fin noticias librería -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm">
+
+
+<!-- libros destacados -->
+<div id="main-news"> 
+<div class="jumbotron jumbotron-fluid">
+<div class="container">
+<span style="font-size: 48px; color: rgb(82, 106, 143);">   
+<h1 class="align-center" > <i class="fas fa-swatchbook"></i>  Libros destacados de esta semana  <i class="fas fa-book-reader"></i> </h1>
+</span>
+</div>
+</div>
+       <div class="row">
+            <div class="card col-12 col-sm-6 col-md-3">
+              <img
+                src="https://www.elejandria.com/covers/El_maravilloso_Mago_de_Oz-L._Frank_Baum-md.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nombre del libro</h5>
+                <p class="card-text  text-justify">
+                  Reseña corta
+                </p>
+                <a href="#" class="btn btn-primary">Link venta Amazon</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-md-3" >
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/71sEeZzr2cL.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nombre del libro</h5>
+                <p class="card-text  text-justify">
+                  Reseña corta
+                </p>
+                <a href="#" class="btn btn-primary">Link venta Amazon</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-md-3">
+              <img
+                src="https://www.librosdelpaso.com.uy/images/stories/virtuemart/product/9786073119207.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nombre del libro</h5>
+                <p class="card-text  text-justify">
+                  Reseña corta
+                </p>
+                <a href="#" class="btn btn-primary">Link venta Amazon</a>
+              </div>
+            </div>
+            <div class="card col-12 col-sm-6 col-md-3">
+              <img
+                src="https://images-na.ssl-images-amazon.com/images/I/61tk3No+lrL._SX325_BO1,204,203,200_.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nombre del libro</h5>
+                <p class="card-text  text-justify">
+                  Reseña corta
+                </p>
+                <a href="#" class="btn btn-primary">Link venta Amazon</a>
+              </div>
+            </div> 
+          </div>
+</div>
+<!-- fin libros destacados -->
+
+      </div>
+    </div>
+  </div>
+  
+<div class="presentation">
+    <div class="jumbotron">
+        <h1 class="display-4 align-center">Bienvenido a MiKroKoSmoS</h1>
+        <p clas="text align-center"> Cada uno de nosotros somos un microcosmos dentro del universo.</p>
+        <p clas="text align-center"> Nuestro objetivo, es hacer brillar el microcosmos que hay en cada escritor y lector, para ello, llegamos a tí de diferentes formas.</p>
+        <hr class="my-4">
+        <p clas="text align-center">Encuentra en nuestra comunidad inspiración y un extenso contenido literario. </p>
+        <p clas="text align-center">Lee y empieza a brillar en nuestro Macrocosmo</p>
+
+      </div>
+</div>
+</body>
+
+</html>
